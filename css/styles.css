@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.navb{
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    background-color:white;
+    height: 100px;
+    top: 0;
+    z-index: 2;
+    padding-top: 25px;
+}
+a:link, a:visited,  a:hover, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.we{
+    font-size: 48px;
+    letter-spacing: 8px;
+}
+.we:hover, .p:hover{
+    color: #000;
+}
+.o:hover{
+    transform: scale(1.2);
+}
+
+.navb ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.625rem;
+    font-size: 1rem;
+    margin-top: 0.625rem;
+}
+
+.btn1{
+    margin-top: 10px;
+}
+
+.caro{
+    margin: 50px;
+}
+
+.list:hover{
+    transform: scale(1.25);
+    text-decoration:underline;
+}
+.up{
+    display: flex;
+    align-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+.im{
+    width: 500px;
+}
+
+.con{
+    margin-top: 100px;
+}
+.con2{
+    display: none;
+}
+.foot{
+    background-color: rgb(87, 85, 85);
+    text-align: center;
+    
+}
+.focon{
+    width: 75%;
+    margin: 50px auto;
+    padding-top: 100px;
+    text-align: left;
+    
+}
+
+.foot-con{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hmm{
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.625rem;
+    font-size: 1rem;
+    margin-top: 0.625rem;
+}
+
+.hmm:hover{
+    transform: scale(1.2);
+}
+
+.fa-brands:hover{
+    color: black;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #000;
+    z-index: 0;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    width: 31.25rem;
+    box-shadow: 0px 0.5rem 1rem 0.5rem rgba(0,0,0,0.2);
+}
+.dropdowncontent ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.625rem;
+    margin-top: 0.625rem;
+    width: 100%; 
+}
+.dropdown:hover .dropdowncontent{
+    display: block;
+    z-index: 1;
+    background-color: azure;
+    width: 16rem; 
+}
+
+.formitem{
+    padding-top: 25vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .up{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .con1{
+        display: none;
+    }
+    .con2{
+        display: block;
+    }
+    .con{
+        margin-top: 0px;
+    }
+    .im{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 950px){
+    .mid{
+        display: none;
+    }
+    .im{
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caro{
+        margin: 10px;
+    }
+    .carimg{
+        height: 400px;
+        
+    }
+}
+
+.marquee-con{
+    overflow-x: hidden ;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* flex-direction: row ; */
+    /* position: relative; */
+}
+
+.marquee{
+    display: flex;
+    flex-direction: row;
+    animation: animate 30s linear infinite;
+    animation-fill-mode: forwards;
+    padding-left: 100%;
+    /* flex: 0 0 auto; */
+    /* min-width: 100%; */
+    /* z-index: 1; */
+    /* align-items: center; */
+}
+.red, .blue, .green, .yellow, .black{
+    height: 20px;
+    width: 10vw;
+    margin: 10px;
+    display: flex;
+
+}
+.red{
+    background-color: rgb(226, 81, 48);
+}
+.blue{
+    background-color: aqua;
+}
+.green{
+    background-color: rgb(6, 252, 34);
+}
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+
+@keyframes animate{
+    100%{
+        transform: translate(-100%,0);
+    }
+}
